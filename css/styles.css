@@ -29,12 +29,7 @@ body{
 .logo-link .logo-link-secondary{
     color: var(--color-active);
 }
-.divider{
-    width: 100%;
-    height: 1px;
-    background-color: transparent;
-    margin: 0;
-    border: none;
+.header{
     border-bottom: 2px solid #ECECEC;
 }
 .header .upperHeader{
