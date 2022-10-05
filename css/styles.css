@@ -15,8 +15,10 @@ body{
     background-color: var(--color-white);
 }
 .container {
-    max-width: 1170px;
+    box-sizing: border-box;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .logo-link{
@@ -85,11 +87,10 @@ body{
 }
 
 .header .hero{
-    height: 600px;
+    padding: 200px 0;
     background-color: var(--bg-dark);
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
@@ -293,9 +294,9 @@ body{
     margin: 0;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, minmax(370px, 1fr));
+    grid-template-columns: repeat(3, 370px);
+    justify-content: center;
     gap: 30px;
-    box-sizing: content-box;
 }
 
 .portfolio .projects-list-item .project-image{
@@ -305,7 +306,9 @@ body{
 
 .portfolio .item-description{
     padding: 20px 24px;
-    border: 1px solid var(--bg-grey);
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: var(--bg-grey);
 }
 .portfolio .project-title{
     font-weight: 700;
